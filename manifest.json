@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Quicksearch",
+  "version": "1.0",
+
+  "description": "Searches through textbooks, pdfs, etc.",
+
+  "icons": {
+    "48": "icons/searchpng.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["borderify.js"]
+    }
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/searchpng.png",
+    "default_popup": "index.html",
+    "default_title": "Quickly search for books, pdfs, etc."
+  }
+
+}
